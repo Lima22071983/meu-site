@@ -1,10 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Meu Primeiro Site</title>
+  <meta charset="UTF-8">
+  <title>Loja Estilo Nike</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fff;
+      color: #111;
+    }
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .hero {
+      background: url("https://via.placeholder.com/1200x500") no-repeat center center;
+      background-size: cover;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 48px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .section {
+      padding: 50px;
+      text-align: center;
+    }
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .product {
+      border: 1px solid #ddd;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Olá, mundo!</h1>
-    <p>Este é meu primeiro site.</p>
+  <header>
+    <h1>MEU SITE ESTILO NIKE</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Produtos</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <div class="hero">Nova Coleção 2026</div>
+
+  <div class="section">
+    <h2>Produtos em Destaque</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/250x250" alt="Produto 1">
+        <p>Tênis Moderno</p>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/250x250" alt="Produto 2">
+        <p>Camiseta Minimalista</p>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/250x250" alt="Produto 3">
+        <p>Jaqueta Esportiva</p>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2026 Meu Site - Inspirado no estilo Nike</footer>
 </body>
 </html>
